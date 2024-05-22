@@ -69,7 +69,7 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
     npx sequelize db:create
     npx sequelize db:migrate
     ```
-    Crea en tu base de datos un role administrador y un role user.
+    Crea en tu base de datos un role administrador y un role user y además un usuario administrador.
     ```bash
     cd frontend
     ```
