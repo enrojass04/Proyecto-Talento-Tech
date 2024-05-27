@@ -77,5 +77,6 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
 5.  Ejecución del proyecto.
 
     Ejecuta el comando en consola tanto en la ruta ../backend como en ../frontend
-
+    ```
     npm run dev
+    ```
