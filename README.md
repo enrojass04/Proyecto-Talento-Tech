@@ -40,15 +40,10 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
     cd frontend
     npm install
     ```
-    Crea un archivo .env en la raíz y proporciona los datos de tu base de datos como se muestra en el ejemplo:
+    Crea un archivo .env en la raíz de esta carpeta y establece la URL principal como se muestra en el ejemplo:
     ```
-    DB_NAME='database'
-    DB_USER='user'
-    DB_PASSWORD='password'
-    DB_HOST='localhost'
-    JWT_SECRET=mysecret
-
-    ```
+    VITE_API_URL=http://127.0.0.1:3000/api/
+    ```  
     Ejecuta el frontend con el comando:
     ```bash
     cd frontend
@@ -60,10 +55,15 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
     cd ../backend
     npm install
     ```
-    Crea un archivo .env en la raíz de esta carpeta y establece la URL principal como se muestra en el ejemplo:
+    Crea un archivo .env en la raíz y proporciona los datos de tu base de datos como se muestra en el ejemplo:
     ```
-    VITE_API_URL=http://127.0.0.1:3000/api/
+    DB_NAME='database'
+    DB_USER='user'
+    DB_PASSWORD='password'
+    DB_HOST='localhost'
+    JWT_SECRET=mysecret
     ```
+    
     Luego, ejecuta los siguientes comandos para crear la base de datos y realizar migraciones:
     ```bash
     npx sequelize db:create
@@ -73,3 +73,9 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
     ```bash
     cd frontend
     ```
+
+5.  Ejecución del proyecto.
+
+    Ejecuta el comando en consola tanto en la ruta ../backend como en ../frontend
+
+    npm run dev
